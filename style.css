@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    flex-direction: column;
+    color: white;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 14px;
+    color:  hsl(217, 12%, 63%);
+    line-height: 24px;
+}
+
+span {
+    background-color: hsla(216, 12%, 54%, 0.243);
+    color: hsl(25, 97%, 53%);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+input {
+    border: none;
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 0.1);
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: hsla(216, 12%, 54%, 0.652);
+}
+
+.input-active {
+    color: black;
+    background-color: hsl(25, 97%, 53%);
+}
+
+button {
+    border: none;
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    padding: 0.75rem 0;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+.img-container {
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container > img {
+    width: 15px;
+    height: 15px; 
+}
+
+.btns {
+    margin-top: 1.5srem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 20%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.thank-you > h1 {
+    margin: 0.25rem 0 0 0 ;
+}
+
+.thank-you > img {
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        max-width: 50%;
+    }
+}
