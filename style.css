@@ -121,8 +121,15 @@ button:hover {
     display: none;
 }
 
+
+@media screen and (max-width: 900px) {
+    .card {
+        max-width: 40%;
+    }
+}
 @media screen and (max-width: 700px) {
     .card {
         max-width: 50%;
     }
 }
+
