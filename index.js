@@ -20,8 +20,6 @@ const handleForm = () => {
     };
 
     const renderSubmit = (newState) => {
-        alert(JSON.stringify(newState))
-
         const rating = document.querySelector('.rating-component');
         const thnx = document.querySelector('.thank-you');
         const p = document.createElement("p");
